@@ -3,11 +3,10 @@
 
 "use strict";
 
-find = (object, ...rest) => {
-  value = rest.pop(1);
-  for (name in object) {
-    if (object[name] !== value) {
-    } else {
+const find = (object, ...rest) => {
+  const value = rest.pop(1);
+  for (const name in object) {
+    if (object[name] === value) {
       return name;
     }
   }
