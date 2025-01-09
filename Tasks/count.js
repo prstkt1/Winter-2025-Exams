@@ -4,11 +4,11 @@
 "use strict";
 
 count = (obj) => {
-  let sum = 0;
   const values = Object.values(obj);
-  values.forEach((value) => {
-    if (typeof value === "number") sum += value;
-  });
+  const sum = values.reduce((acc, value) => {
+    if (typeof value === "number") return acc + value;
+    return acc;
+  }, 0);
   return sum;
 };
 
