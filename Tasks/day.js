@@ -1,12 +1,11 @@
 // Refactor following solution
 // Get day number
 
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-const GetDayNumber = (s) => {
-  let i;
-  for (i = 0; i < days.length; i++) {
-    if (s.startsWith(days[i].toLowerCase())) {
+const GetDayNumber = (input) => {
+  for (let i = 0; i < days.length; i++) {
+    if (input.startsWith(days[i].toLowerCase())) {
       return i + 1;
     }
   }
