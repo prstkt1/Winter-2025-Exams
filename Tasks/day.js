@@ -1,6 +1,8 @@
 // Refactor following solution
 // Get day number
 
+"use strict";
+
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const GetDayNumber = (input) => {
