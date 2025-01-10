@@ -8,8 +8,8 @@ const countTypes = function (arr) {
     boolean: 0,
   };
   for (const item of arr) {
-    const t = typeof item;
-    result[t]++;
+    const type = typeof item;
+    result[type]++;
   }
   arr.push("string");
   return result;
