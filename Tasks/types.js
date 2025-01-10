@@ -13,7 +13,6 @@ const countTypes = function (arr) {
     const type = typeof item;
     result[type]++;
   }
-  arr.push("string");
   return result;
 };
 
