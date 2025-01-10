@@ -3,7 +3,7 @@
 
 "use strict";
 
-count = (obj) => {
+const count = (obj) => {
   const values = Object.values(obj);
   const sum = values.reduce((acc, value) => {
     if (typeof value === "number") return acc + value;
