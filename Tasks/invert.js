@@ -3,12 +3,12 @@
 
 "use strict";
 
-const invert = (A) => {
-  const T = Object.keys(A);
-  T.forEach((i) => {
-    T[i] = A.pop();
-  });
-  return T;
+const invert = (array) => {
+  const result = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    result.push(array[i]);
+  }
+  return result;
 };
 
 module.exports = invert;
