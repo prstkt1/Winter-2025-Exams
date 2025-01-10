@@ -13,7 +13,6 @@ const types_ = function (s) {
   }
   s.push("string");
   return types_;
-  s.length;
 };
 
 module.exports = types_;
