@@ -19,8 +19,9 @@ const Months = [
 ];
 
 const Month = (inputString) => {
+  const lowerCasedInput = inputString.toLowerCase();
   for (let i = 0; i < Months.length; i++) {
-    if (inputString.toLowerCase().startsWith(Months[i])) return i + 1;
+    if (lowerCasedInput.startsWith(Months[i])) return i + 1;
   }
   return -1;
 };
