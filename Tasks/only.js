@@ -4,14 +4,13 @@
 "use strict";
 
 const onlySelected = (dictionary, ...keys) => {
-  const dictionaryKeys = Object.keys(dictionary);
-  dictionaryKeys.forEach((key) => {
-    if (keys.includes(key)) {
-    } else {
-      delete dictionary[key];
+  const result = {};
+  for (const key of keys) {
+    if (key in dictionary) {
+      result[key] = dictionary[key];
     }
-  });
-  return dictionary;
+  }
+  return result;
 };
 
 module.exports = onlySelected;
