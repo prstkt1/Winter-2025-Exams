@@ -1,6 +1,8 @@
 // Refactor following solution
 // Get month number
 
+"use strict";
+
 const Months = [
   "jan",
   "feb",
