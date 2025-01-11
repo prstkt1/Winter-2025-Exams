@@ -3,15 +3,15 @@
 
 "use strict";
 
-const only = (W, ...only) => {
-  const X = Object.keys(W);
-  X.forEach((Z) => {
-    if (only.includes(Z)) {
+const onlySelected = (dictionary, ...keys) => {
+  const dictionaryKeys = Object.keys(dictionary);
+  dictionaryKeys.forEach((key) => {
+    if (keys.includes(key)) {
     } else {
-      delete W[Z];
+      delete dictionary[key];
     }
   });
-  return W;
+  return dictionary;
 };
 
-module.exports = only;
+module.exports = onlySelected;
