@@ -1,16 +1,16 @@
 // Refactor following solution
 // Sum all numbers from an array
 
-const sum = (s = () => {}) => {
-  const sum = [0];
-  for (i of s) {
-    const t = typeof i;
-    if (t === "number") {
-      const new_Sum = sum[sum.length - 1] + i;
-      sum.push(new_Sum);
+"use strict";
+
+const sum = (inputArr) => {
+  let result = 0;
+  for (let i = 0; i < inputArr.length; i++) {
+    if (typeof inputArr[i] === "number") {
+      result += inputArr[i];
     }
   }
-  return sum[sum.length - 1];
+  return result;
 };
 
 module.exports = sum;
